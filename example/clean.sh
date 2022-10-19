@@ -1,0 +1,3 @@
+rm simple_example_server.o
+rm test_simple_example_client
+rm test_simple_example_server

@@ -1,0 +1,18 @@
+namespace lpc.SimpleExample;
+
+enum Status :byte {OK, ERROR, UNKNOWN}
+
+struct InputData {
+ in:[int:2];
+ weight:float;
+}
+
+table SimpleInput {
+ name:string;
+ data:InputData;
+}
+
+table SimpleOutput {
+ status:Status;
+ output:float;
+}

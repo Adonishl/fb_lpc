@@ -1,0 +1,2 @@
+import simple_example.fbs
+service SimpleCal {input (lpc::SimpleExample::SimpleInput) returns output (lpc::SimpleExample::SimpleOutput)}

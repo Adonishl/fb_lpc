@@ -1,0 +1,11 @@
+import simple_example.fbs
+namespace lpc
+service SimpleCal {input (lpc::SimpleExample::SimpleInput) returns output (lpc::SimpleExample::SimpleOutput)}
+service SimpleCal2 {
+    input (lpc::SimpleExample::SimpleInput) returns output (lpc::SimpleExample::SimpleOutput)
+}
+service SimpleCal3 {
+    input (lpc::SimpleExample::SimpleInput) 
+    returns 
+    output (lpc::SimpleExample::SimpleOutput)
+}

@@ -1,0 +1,16 @@
+{% for path in generated_fb_headers %}
+#include "{{path}}"
+{% endfor %}
+#include "{{generated_header}}"
+
+namespace {{namespace}} {
+
+{% for service in service_list %}
+void {{server_name}}Impl::{{service.name}}(
+    const lpc::Message<{{service.input_type}}> *{{service.input_name}},
+    lpc::Message<{{service.output_type}}> &{{service.output_name}}) {
+  // For user to implement
+}
+{% endfor %}
+
+} // namespace {{namespace}}
