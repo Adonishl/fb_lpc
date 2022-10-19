@@ -1,0 +1,35 @@
+repos.cfg
+repos_init.cfg
+nvtool*
+# for C/C++
+.build
+build_doc
+/output
+.idea
+*.iml
+.sln
+*.swp
+.DS_Store
+.gradle
+third_module
+.tmp
+*.tmp
+.vscode
+cmake-build-debug
+cmake-build-release
+build.properties.local
+.svn
+# for python
+*.py[cod]
+*.egg
+*.egg-info
+dist
+
+# for Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.pt
+*gemm_config.in
+*.csv
+.csv
